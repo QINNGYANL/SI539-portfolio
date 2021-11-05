@@ -1,0 +1,110 @@
+header{
+    background: #c1cbd7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16pt;
+}
+label.logo{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    text-align: center;
+    font-weight: bold;
+}
+ul.nav_links{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.nav_links a{
+    text-align: center;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    text-decoration: none;
+}
+
+.nav_links a:visited{
+    border: 1px solid #96a48b;
+}
+h3 {
+    padding-left:30px ;
+    padding-right: 30px;
+    text-align: center;
+}
+#receipt{
+    background: #f8ebd8;
+    border: 2px solid #965454;
+}
+
+.receipt{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(9, 1fr);
+    row-gap: 10px;
+}
+img{
+    border: 10px solid #96a48b;
+    /* margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px; */
+    object-fit: cover;
+    width: 95%;
+}
+.baozaifan{
+    grid-column: 1/span 2;
+    grid-row: 1/span 1;
+}
+.hanshidunniugu{
+    grid-column: 1/span 2;
+    grid-row: 2/span 1;
+}
+.kaolongxia{
+    grid-column: 1/span 2;
+    grid-row: 3/span 1;
+}
+.shiyouji{
+    grid-column: 1/span 2;
+    grid-row: 4/span 1;
+}
+/* .shuizhuniiurou{
+    grid-column: 1/span 2;
+    grid-row: 5/span 1;
+} */
+.tangcupaigu{
+    grid-column: 1/span 2;
+    grid-row: 5/span 1;
+}
+.tudousi{
+    grid-column: 1/span 2;
+    grid-row: 6/span 1;
+}
+.lianou{
+    grid-column: 1/span 2;
+    grid-row: 7/span 1;
+}
+.fanqiechaodan{
+    grid-column: 1/span 2;
+    grid-row: 8/span 1;
+}
+.jianbing{
+    grid-column: 1/span 2;
+    grid-row: 9/span 1;
+}
+footer{
+    background-color: #c1cbd7;
+    text-align: center;
+    position: relative;
+    bottom:0;
+    width:100%;
+    text-align: center;
+}
