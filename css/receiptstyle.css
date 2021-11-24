@@ -40,29 +40,31 @@ h3 {
     padding-right: 30px;
     text-align: center;
 }
-#receipt{
+#recipe{
     background: #f8ebd8;
     border: 2px solid #965454;
 }
 
-.receipt{
+.recipe{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(9, 1fr);
     row-gap: 10px;
+    justify-content: center;  
 }
 img{
     border: 10px solid #96a48b;
-    /* margin-top: 10px;
+    margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
-    margin-right: 10px; */
-    object-fit: cover;
-    width: 95%;
+    margin-right: 10px;
+    width: 300px;
 }
 .baozaifan{
     grid-column: 1/span 2;
     grid-row: 1/span 1;
+    align-self: center;
+    align-items: center;
 }
 .hanshidunniugu{
     grid-column: 1/span 2;
@@ -107,4 +109,34 @@ footer{
     bottom:0;
     width:100%;
     text-align: center;
+}
+
+@media screen and (min-width: 800px){
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    label.logo{
+        color: white;
+        font-size: 50px;
+        line-height: 80px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .recipe{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        row-gap: 10px;
+    }
+
 }
