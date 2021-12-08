@@ -1,5 +1,5 @@
 header{
-    background: #c1cbd7;
+    background: #7b8b6f;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,6 +30,7 @@ ul.nav_links{
     justify-content: center;
     align-items: center; */
     text-decoration: none;
+    color: black;
 }
 
 .nav_links a:visited{
@@ -127,6 +128,14 @@ footer{
         flex-basis: 250px;
         justify-content: space-evenly;
         flex-wrap: wrap;
+    }
+    footer{
+        background-color: #c1cbd7;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 2rem;
     }
 
 }

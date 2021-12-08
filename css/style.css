@@ -1,5 +1,5 @@
 header{
-    background: #c1cbd7;
+    background: #7b8b6f;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -22,6 +22,7 @@ h1{
     font-size: 1.5em;
     text-align: center;
     padding: 5px;
+    margin-top: 20px;
   }
   
   p {
@@ -49,6 +50,7 @@ ul.nav_links{
     justify-content: center;
     align-items: center; */
     text-decoration: none;
+    color: black;
 }
 
 .nav_links a:visited{
@@ -100,6 +102,20 @@ footer{
 }
 
 @media screen and (min-width: 800px){
+    @keyframes bigger{
+        from {
+            color: white;
+            font-size: 0;
+        }
+        to{
+            color: #7b8b6f;
+            font-size: 2em;
+        }
+    }
+    #welcome {
+        animation-name: bigger;
+        animation-duration: 4s;
+    }
     a.skip{
         background: white;
         left: 0;
@@ -116,7 +132,6 @@ footer{
         color: black;
         text-decoration-style: solid;
       }
-      
 
     header{
         display: flex;
@@ -143,5 +158,37 @@ footer{
         flex-basis: 250px;
         justify-content: space-evenly;
         flex-wrap: wrap;
+    }
+    
+    
+    .flipcard-inner{
+        position: relative;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    .flipcard:hover .flipcard-inner{
+        transform: rotateY(180deg);
+    }
+    .tudousi, .tudousiflipback {
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+    }
+    .tudousiflipback{
+        transform: rotateY(180deg);
+        position: absolute;
+    }
+    footer{
+        background-color: #c1cbd7;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 2rem;
+    }
+}
+@media screen and (prefers-reduced-motion: reduce){
+    #welcome{
+        animation: none;
     }
 }

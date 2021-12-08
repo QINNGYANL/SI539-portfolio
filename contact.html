@@ -16,17 +16,37 @@
             <ul class="nav_links">
                 <li id="homepage"><a href="index.html">🏠 Homepage</a></li>
                 <li id="about"><a href="about.html">🗓 About</a></li>
-                <li id="recipe"><a href="recipe.html">💡 Recipe</a></li>
+                <li id="recipe"><a href="recipe.html">💡 Gallery</a></li>
                 <li id="contact"><a href="contact.html">📬 Contact</a></li>
             </ul>
             </nav>
         </header>
-        <main>
+        <main id="skip">
             <p>Feel free to contact me if you want!</p>
             <p>✉️Email: <a href="mailto:qinyanli@umich.edu">qinyanli@umich.edu</a></p>
             <p>☎️ Phone: 734-604-9065</p>
             <p>📄 Resume: <a href="https://drive.google.com/file/d/1mbi9cv_vNIPUPCY-GBesFj0NRN09WLgg/view?usp=sharing">Click to view my resume</a></p>
-
+            <form action="https://formspree.io/f/mzbobzby" method="post">
+                <h1>Feel free to leave me a message</h1>
+                <ul>
+                 <li>
+                   <label for="name">Name:</label>
+                   <input type="text" placeholder="Enter Your Name" id="name" name="user_name">
+                 </li>
+                 <li>
+                   <label for="mail">E-mail:</label>
+                   <input type="email" placeholder="Enter Your Email" id="mail" name="user_email">
+                 </li>
+                 <li>
+                   <label for="msg">Message:</label>
+                   <textarea id="msg" name="user_message"></textarea>
+                 </li>
+                 <li class="button">
+                    <button type="submit">Send your message</button>
+                  </li>
+                </ul>
+                
+               </form>
         </main>
         <footer>Qingyan Li &copy; 2021</footer>
     </body>

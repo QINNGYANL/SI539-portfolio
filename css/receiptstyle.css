@@ -1,5 +1,5 @@
 header{
-    background: #c1cbd7;
+    background: #7b8b6f;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,12 +30,14 @@ ul.nav_links{
     justify-content: center;
     align-items: center; */
     text-decoration: none;
+    color: black;
 }
 
 .nav_links a:visited{
     border: 1px solid #96a48b;
 }
-h3 {
+
+h1 {
     padding-left:30px ;
     padding-right: 30px;
     text-align: center;
@@ -50,7 +52,7 @@ h3 {
     grid-template-columns: 100%;
     grid-template-rows: repeat(9, 1fr);
     row-gap: 10px;
-    justify-content: center;  
+    text-align: center;
 }
 img{
     border: 10px solid #96a48b;
@@ -63,8 +65,8 @@ img{
 .baozaifan{
     grid-column: 1/span 2;
     grid-row: 1/span 1;
-    align-self: center;
-    align-items: center;
+    /* align-self: center;
+    align-items: center; */
 }
 .hanshidunniugu{
     grid-column: 1/span 2;
@@ -110,6 +112,11 @@ footer{
     width:100%;
     text-align: center;
 }
+@media screen and (prefers-reduced-motion: reduce){
+    .baozaifan{
+        animation: none;
+    }
+}
 
 @media screen and (min-width: 800px){
     a.skip{
@@ -151,8 +158,113 @@ footer{
     .recipe{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(9, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         row-gap: 10px;
+        text-align: center;
+    }
+
+    h3 {
+        padding-left:30px ;
+        padding-right: 30px;
+        text-align: center;
+        /* font-size: 0.5em; */
+    }
+
+    .baozaifan{
+        grid-column: 1/span 1;
+        grid-row: 1/span 1;
+        /* align-self: center;
+        align-items: center; */
+    }
+    .baozaifan{
+        transition: transform 0.5s ease-out;
+    }
+    .baozaifan:hover{
+        transform: rotate(360deg);
+    }
+    .hanshidunniugu{
+        grid-column: 2/span 1;
+        grid-row: 1/span 1;
+    }
+    .hanshidunniugu{
+        transition: transform 0.5s ease-out;
+    }
+    .hanshidunniugu:hover{
+        transform: rotate(360deg);
+    }
+    .kaolongxia{
+        grid-column: 3/span 1;
+        grid-row: 1/span 1;
+    }
+    .kaolongxia{
+        transition: transform 0.5s ease-out;
+    }
+    .kaolongxia:hover{
+        transform: rotate(360deg);
+    }
+    .shiyouji{
+        grid-column: 1/span 1;
+        grid-row: 2/span 1;
+    }
+    .shiyouji{
+        transition: transform 0.5s ease-out;
+    }
+    .shiyouji:hover{
+        transform: rotate(360deg);
+    }
+    /* .shuizhuniiurou{
+        grid-column: 1/span 2;
+        grid-row: 5/span 1;
+    } */
+    .tangcupaigu{
+        grid-column: 2/span 1;
+        grid-row: 2/span 1;
+    }
+    .tangcupaigu{
+        transition: transform 0.5s ease-out;
+    }
+    .tangcupaigu:hover{
+        transform: rotate(360deg);
+    }
+    .tudousi{
+        grid-column: 3/span 1;
+        grid-row: 2/span 1;
+    }
+    .tudousi{
+        transition: transform 0.5s ease-out;
+    }
+    .tudousi:hover{
+        transform: rotate(360deg);
+    }
+    .lianou{
+        grid-column: 1/span 1;
+        grid-row: 3/span 1;
+    }
+    .lianou{
+        transition: transform 0.5s ease-out;
+    }
+    .lianou:hover{
+        transform: rotate(360deg);
+    }
+    .fanqiechaodan{
+        grid-column: 2/span 1;
+        grid-row: 3/span 1;
+    }
+    .fanqiechaodan{
+        transition: transform 0.5s ease-out;
+    }
+    .fanqiechaodan:hover{
+        transform: rotate(360deg);
+    }
+    .jianbing{
+        grid-column: 3/span 1;
+        grid-row: 3/span 1;
+    }
+    .jianbing{
+        transition: transform 0.5s ease-out;
+    }
+    .jianbing:hover{
+        transform: rotate(360deg);
     }
 
 }
