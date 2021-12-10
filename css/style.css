@@ -160,24 +160,6 @@ footer{
         flex-wrap: wrap;
     }
     
-    
-    .flipcard-inner{
-        position: relative;
-        text-align: center;
-        transition: transform 0.8s;
-        transform-style: preserve-3d;
-    }
-    .flipcard:hover .flipcard-inner{
-        transform: rotateY(180deg);
-    }
-    .tudousi, .tudousiflipback {
-        -webkit-backface-visibility: hidden; /* Safari */
-        backface-visibility: hidden;
-    }
-    .tudousiflipback{
-        transform: rotateY(180deg);
-        position: absolute;
-    }
     footer{
         background-color: #c1cbd7;
         text-align: center;
